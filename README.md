@@ -6,7 +6,7 @@ Los scripts están escritos en PHP plano sin utilizar ningún Framework, para no
 
 Para ejecutar el proyecto, debemos clonar en el repositorio en el docroot
 
-git clone git@github.com:fmogro/fibonacci.git .
+    git clone git@github.com:fmogro/fibonacci.git .
 
 Una vez clonado, se creara la carpeta fibonacci, dentro de la carpeta fibonacci existen 2 archivos en PHP uno llamado api.php y otro api-json.php ambos reciben los mismos parámetros.
 
