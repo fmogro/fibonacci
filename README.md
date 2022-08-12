@@ -2,7 +2,7 @@
 
 Este Proyecto es una calculadora Fibonacci. Es capaz de calcular los números de Fibonacci a tiempo real, así que podremos tener la progresión en cualquier momento. 🔢
 
-Los scripts están escritos en PHP plano sin utilizar ningún Framework, para no consumir recursos que pueden ser aprovechado.
+Los scripts están escritos en PHP plano sin utilizar ningún Framework, para no consumir recursos que pueden ser aprovechado.# 🔥
 
 Para ejecutar el proyecto, debemos clonar en el repositorio en el docroot
 
@@ -20,7 +20,7 @@ y debemos abrir en el navegador de preferencia de la siguiente manera:
 
 Obteniendo como respuesta (en texto plano como la solicitada por el cliente):
 
-> **Numero: 8 Nombre: felipe**
+![Plain text response](https://i.ibb.co/XV97BKQ/img1.png)
 
 Y el siguiente script, recibe únicamente devuelve una respuesta en json que es la adecuada en una Api Rest.
 
