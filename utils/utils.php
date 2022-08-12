@@ -51,7 +51,11 @@ function generateJson($name,$fibonnaciNumber){
 
   function validateMethod($methodData){
     validateData($methodData['nombre'],$methodData['posicion']);
-    $methodData = array('nombre'=>$methodData['nombre'],'posicion'=>$methodData['posicion']);
+    $outputFormat ='';
+    if ($methodData['tipo']){
+        $outputFormat = $methodData['tipo'];
+    }
+    $methodData = array('nombre'=>$methodData['nombre'],'posicion'=>$methodData['posicion'],'tipo'=>$outputFormat);
     return $methodData;
   }
 

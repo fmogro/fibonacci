@@ -10,8 +10,14 @@ $requestInfo = getInformation($requestMethod);
 $getName=$requestInfo['nombre'];
 $getPosition=$requestInfo['posicion'];
 
+
 $fibonacci = new Fibonacci($getPosition);
 $fibonnaciNumber = $fibonacci->generateFibonacci();
-echo  "Numero: $fibonnaciNumber Nombre: $getName";
+
+if ($requestInfo['tipo']!=='json'){
+    echo  "Numero: $fibonnaciNumber Nombre: $getName";
+}else{
+    echo  generateJson($getName,$fibonacci->generateFibonacci());
+}
 
 ?>
