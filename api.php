@@ -1,6 +1,9 @@
 <?php
+
 require "helpers/helpers.php";
 include "utils/utils.php";
+
+isfromCommand();
 
 $getName= $_GET["nombre"];
 $getPosition = $_GET["posicion"]; 
