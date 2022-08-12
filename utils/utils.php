@@ -8,7 +8,7 @@
  */
 function validateData($name,$position){
     if (!$name || !$position){
-        echo "Faltan datos";
+        echo "Los parametros nombre y posicion son requeridos";
         die();
     }
 }

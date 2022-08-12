@@ -29,3 +29,7 @@ Y el siguiente script, recibe únicamente devuelve una respuesta en json que es 
 Obteniendo una respuesta en Json así
 
 ![Respuesta Json](https://i.ibb.co/k8tDHdq/imgcarbon1.png)
+
+Si no se envía ninguno de los 2 parámetros, el API devuelve un error por defecto. Es decir, se deben enviar los dos parámetros requeridos para que el API funcione. En caso que no se envíen, el error es el siguiente.
+
+![Required parameters](https://i.ibb.co/RCj8Wnr/parametrosrequeridos.png)
