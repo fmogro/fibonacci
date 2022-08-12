@@ -12,5 +12,4 @@ $fibonnaciNumber = $fibonacci->generateFibonacci();
 
 echo  "Numero: $fibonnaciNumber Nombre: $getName";
 
-
 ?>
