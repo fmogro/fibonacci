@@ -7,9 +7,20 @@
  * @position = fibonacci position
  */
 function validateData($name,$position){
-    if (!$name || !$position){
-        echo "Los parametros nombre y posicion son requeridos";
-        die();
+    switch (true) {
+        case (!$name and $position):
+            echo 'El campo nombre es requerido';
+            die();
+            break;
+        case ($name and !$position);
+            echo 'El campo posicion es requerido';
+            die();
+            break;
+        case (!$name and !$position);
+            echo 'Los campos nombre y posicion son requeridos';
+            die();
+            break;
+
     }
 }
 
