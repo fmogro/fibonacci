@@ -1,5 +1,4 @@
 <?php
-
 require "helpers/helpers.php";
 include "utils/utils.php";
 

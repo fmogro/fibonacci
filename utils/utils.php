@@ -26,7 +26,6 @@ function generateJson($name,$fibonnaciNumber){
  * Prevent to execute from command line
  * This function die the script when its be execute from php command line
  */
-
  function isfromCommand(){
      if(PHP_SAPI == 'cli') {
          echo "Error, este script no puede ejecutar este error desde la linea de comandos\n";
