@@ -2,11 +2,13 @@
 require "helpers/helpers.php";
 include "utils/utils.php";
 
-$getName= $_GET["nombre"];
-$getPosition = $_GET["posicion"]; 
-
 isfromCommand();
-validateData($getName,$getPosition);
+
+$requestMethod = $_SERVER['REQUEST_METHOD'];
+$requestInfo = getInformation($requestMethod);
+
+$getName=$requestInfo['nombre'];
+$getPosition=$requestInfo['posicion'];
 
 $fibonacci = new Fibonacci($getPosition);
 $fibonnaciNumber = $fibonacci->generateFibonacci();

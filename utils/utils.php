@@ -45,4 +45,30 @@ function generateJson($name,$fibonnaciNumber){
  }
 
 
+ /**
+  * Function that validate Request Method and return the array data
+  */
+
+  function validateMethod($methodData){
+    validateData($methodData['nombre'],$methodData['posicion']);
+    $methodData = array('nombre'=>$methodData['nombre'],'posicion'=>$methodData['posicion']);
+    return $methodData;
+  }
+
+
+/**
+ * Function that validate method and send the data to array format
+ **/  
+  function getInformation($dataSwitch){
+    switch ($dataSwitch) {
+        case 'POST':
+            $responseRequest = validateMethod($_POST);  
+            break;
+        case 'GET':
+            $responseRequest = validateMethod($_GET);  
+            break;
+        }
+    return $responseRequest;
+  }
+
 ?>
