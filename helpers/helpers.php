@@ -24,6 +24,7 @@ class Fibonacci{
         $numFibbonaci2 = 1;
   
         $counter = 0;
+        
         while ($counter < $this->position){
             $numFibbonaci3 = $numFibbonaci2 + $numFibbonaci1;
             $numFibbonaci1 = $numFibbonaci2;
