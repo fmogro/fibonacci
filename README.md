@@ -44,6 +44,24 @@ Y además se realiza validación, para que el api soporte el método get y el m�
 
 De manera adicional, se creo una alternativa en la carpeta **alternative** para usar únicamente dos archivos **api.php** y un archivo **services/class.php** donde en class se realiza una lógica diferente para la serie Fibonacci y además, se unifica todas las funciones en archivo class para código mejor organizado
 
-    http://localhost/fibonacci/alternative/api.php?posicion=6&nombre=felipe
+http://localhost/fibonacci/alternative/api.php?posicion=6&nombre=felipe
 
 ![Plain text response](https://i.ibb.co/XV97BKQ/img1.png)
+
+Se instalo libreria externa
+
+```markup
+php composer.phar require vlucas/phpdotenv
+```
+
+La cual me permite leer variables de entorno de archivo **.env**, para así evitar poner credenciales en **producción/desarrollo** sino que cada desarrollador las puede utilizar a su criterio y se dejo el archivo .**env** en .**gitignore**, para que no se vaya al versionamiento y se creo un archivo .**env.example**, que una vez clonado el repositorio se debe copiar y dejar un .**env** para configurar credenciales de mysql.
+
+> \***\*NOTA**: Normalmente no se envía la carpeta **vendor** con su contenido a github/gitlab, sin embargo, se envió para que no
+> descarguen composer (en caso de no tenerlo).\*\*
+
+Además se crearon 2 archivos uno llamado **conn.php** y otro **database.php.**
+El archivo conn.php contiene credenciales mysql leídas de variables de entorno.
+
+El archivo **database.php** se lo debe ejecutar una vez ya configuradas las credenciales, este archivo, va a verificar si la base de datos no existe, y si no existe la creará y creará las respectivas tablas.
+
+Los demás archivos utilizan la configuración de la variable de entorno, así que no requieren configuración
