@@ -1,5 +1,6 @@
 <?php
 require "helpers/helpers.php";
+require "helpers/mysql.php";
 include "utils/utils.php";
 
 isfromCommand();
@@ -13,6 +14,10 @@ $getPosition=$requestInfo['posicion'];
 
 $fibonacci = new Fibonacci($getPosition);
 $fibonnaciNumber = $fibonacci->generateFibonacci();
+
+$useMysql = new MySqlClass($fibonnaciNumber,$getName);
+$useMysql->insertData();
+
 
 if ($requestInfo['tipo']!=='json'){
     echo  "Numero: $fibonnaciNumber Nombre: $getName";
