@@ -22,7 +22,6 @@ class MySqlClass{
      */
     function insertData(){
         $insertQuery = "INSERT INTO info (nombre,posicion) VALUES ('$this->getName', '$this->fibonnaciNumber')";
-        var_dump($insertQuery);
         if(mysqli_query($this->conn, $insertQuery)){  
                 return true;
         }else{  

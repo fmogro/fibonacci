@@ -4,7 +4,7 @@
 * This class contain the helpers for API Rest
 *
 * @author     Felipe Mogro
-* @version    1.0
+* @version    1.0.1
 * 
 */
 
