@@ -36,8 +36,14 @@ Si no se envía ninguno de los 2 parámetros, el API devuelve un error por defec
 
 De manera adicional, se agrego un parámetro llamado **tipo** que es Opcional y para que nos de salida en formato json debemos agregarle tipo=json, este define el formato de salida en el script api.php si con la misma api se desea obtener una respuesta en json de la siguiente manera
 
-    http://localhost/api.php?nombre=felipe&posicion=6&tipo=json
+http://localhost/api.php?nombre=felipe&posicion=6&tipo=json
 
 Y además se realiza validación, para que el api soporte el método get y el método post, adjunto captura de Postman.
 
 ![Postman screenshot](https://i.ibb.co/XsDbq80/postman.png)
+
+De manera adicional, se creo una alternativa en la carpeta **alternative** para usar únicamente dos archivos **api.php** y un archivo **services/class.php** donde en class se realiza una lógica diferente para la serie Fibonacci y además, se unifica todas las funciones en archivo class para código mejor organizado
+
+    http://localhost/fibonacci/alternative/api.php?posicion=6&nombre=felipe
+
+![Plain text response](https://i.ibb.co/XV97BKQ/img1.png)
